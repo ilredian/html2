@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.2.js"></script>
 </head>
 <body>
-<a href="index2.html">링크</a>
+	<a href="index2.html">링크</a>
+	<div id="naver_id_login"></div>
+	<script type="text/javascript">
+		var naver_id_login = new naver_id_login("4N0Jef5APtb3Q4iUyxZW",
+				"http://static.nid.naver.com/oauth/naverOAuthExp.nhn");
+		naver_id_login.setButton("white", 2, 40);
+		naver_id_login.setDomain(".ilredian.xyz");
+		naver_id_login.setState("a0vqiyWnRJ4wswvg");
+		naver_id_login.setPopup();
+		naver_id_login.init_naver_id_login();
+	</script>
 </body>
 </html>
